@@ -3,5 +3,12 @@
 // console.log("Мой третий коммит");
 // console.log("Мой четвертый коммит");
 
-const getValue = require("./helpers/array.js")
-console.log(getValue());
+
+async function init() {
+    if (false) {
+    const {getValue} = await import("./helpers/array.js");
+    console.log(getValue());
+    }
+}
+
+init();
